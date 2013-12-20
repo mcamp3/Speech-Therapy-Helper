@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="1,2"
+    tools:context=".WordActivity" >
+
+        <Button
+            android:id="@+id/buttondelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_margin="10dp"
+            android:onClick="delete"
+            android:text="Clear Recording" />
+
+        <TextView
+            android:id="@+id/textviewwordcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/buttondelete"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/buttondelete"
+            android:layout_margin="10dp"
+            android:text="Word 1/20"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+   
+        <TextView
+            android:id="@+id/textviewWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="talk"
+            android:text="Word"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textviewfreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_below="@id/textviewWord"
+            android:layout_centerHorizontal="true"
+            android:text="Record 3 times"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textviewfreq"
+            android:layout_margin="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Record"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/buttonplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textviewfreq"
+            android:layout_margin="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Play"
+            android:textSize="25dp" />
+   
+        <Button
+            android:id="@+id/buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:onClick="next"
+            android:text="Next Word"
+            android:textSize="20dp" />
+
+</RelativeLayout>
